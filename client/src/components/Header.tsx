@@ -39,8 +39,8 @@ function Header(props: any) {
                     <div className='headerBar d-flex flex-wrap'>
                         <a className='barItem mr-20' href='./Resume/Builder'>Создать резюме</a>
                         {/* <a className='barItem mr-20' href='#'>Шаблоны резюме</a> */}
-                        <a className='barItem mr-20' href='#'>Справка</a>
-                        <a className='barItem mr-20' href='#'>Контакты</a>
+                        <a className='barItem mr-20' href='./About-us'>Справка</a>
+                        <a className='barItem mr-20' href='./Contacts'>Контакты</a>
                         {/* <Link className='barItem ml-40' to='/LoginPage'>Вход</Link> */}
                         <a className='barItem ml-40' href='./Login' style={(username) ? { display: 'none' } : {}}>Вход</a>
                     </div>

@@ -28,7 +28,7 @@ function Footer() {
               <li className="childRow">
                 <a href='/Resume/Tutorial'>Как составлять резюме?</a>
               </li>
-            </ul>
+            </ul> 
           </div>
           <div className='parentColumn mr-50'>
             <ul className="childColumn m-10">
