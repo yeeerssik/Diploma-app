@@ -1,6 +1,5 @@
 import 'macro-css';
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 type TProps = {
     imagePath: string;
@@ -10,17 +9,12 @@ type TProps = {
 };
 
 const TemplatesBlock: React.FC<TProps> = ({
-    imagePath, pageId, onMouseEnterImage, onMouseLeaveImage 
+    imagePath, pageId, onMouseEnterImage, onMouseLeaveImage
 }) => (
-    <>
-        <Link to={`/Resume/${pageId}`}>
-            <div className='resumeCard'>
-                <img width={250} height={350} src={imagePath}></img>
-            </div >
-        </Link>
-
-    </>
-)
+    <div className='resumeCard' onClick={onMouseEnterImage}>
+        <img width={250} height={350} src={imagePath}></img>
+    </div >
+);
 
 export default TemplatesBlock;
 

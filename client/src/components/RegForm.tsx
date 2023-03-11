@@ -50,7 +50,7 @@ function RegistrationForm() {
                 </Form.Item>
 
                 <div className='buttonsList d-flex flex-row justify-between align-center'>
-                    <Link to='/login'>Уже есть аккаунт?</Link>
+                    <Link to='/Login'>Уже есть аккаунт?</Link>
                     <Button type='primary' htmlType='submit'>
                         Регистрация
                     </Button>

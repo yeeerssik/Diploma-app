@@ -12,7 +12,7 @@ function ImageBlock() {
                 <button className={styles.createButton} onClick={() => {navigate('/Resume/builder')}} >Создать</button>
             </div>
             <div className='rotatedPartition'></div>
-            <img className='peopleImage' src='./interview.jpg' alt='' />
+            <img className='peopleImage' height={582} src='./interview.jpg' alt='' />
         </div>
     );
 }
