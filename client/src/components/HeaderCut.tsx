@@ -1,8 +1,6 @@
-import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Menu, Dropdown, Button } from 'antd'
 import logo from '../logo.svg';
-// import '../styles/loginPage.scss'
 import '../styles/header.scss';
 
 function HeaderCut() {
@@ -38,7 +36,7 @@ function HeaderCut() {
                     </Link>
                     <div className='headerBar d-flex flex-wrap'>
                         <a className='barItem mr-20' href='./Resume/builder'>Создать резюме</a>
-                        <a className='barItem mr-20' href='/Login' style={(username) ? { display: 'none' } : {}}>Вход</a>
+                        <a className='barItem mr-20' href='/Login' style={(username === "") ? { display: 'none' } : {}}>Вход</a>
 
                     </div>
 
