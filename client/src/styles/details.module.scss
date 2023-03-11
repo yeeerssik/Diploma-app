@@ -1,0 +1,22 @@
+.createButton {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+    width: 200px;
+    height: 40px;
+    background-color: #3778F4;
+    color: #ffffff;
+    position: relative;
+    cursor: pointer;
+    box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+    transition: background 0.25s ease-in-out;
+
+    &:hover {
+        background: lighten(rgb(89, 130, 255), 5%);
+    }
+
+    &:active {
+        background: darken(rgb(89, 130, 255), 5%);
+    }
+}
