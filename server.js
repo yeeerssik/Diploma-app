@@ -10,9 +10,9 @@ const path = require('path');
 app.use('/api/user', userRoute);
 
 if (process.env.NODE_ENV !== 'production') {
-    app.use('/', express.static('client/build'));
+    app.use('/', express.static('cv-app-front/build'));
     app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, "client/build/index.html"));
+        res.sendFile(path.resolve(__dirname, "cv-app-front/build/index.html"));
     });
 }
 
