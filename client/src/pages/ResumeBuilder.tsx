@@ -1,11 +1,11 @@
 import React from 'react';
 import axios from 'axios';
 import { Button, Form, Tabs, Spin, message } from 'antd';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import Header from '../components/HeaderCut';
 import styles from '../../styles/details.module.scss';
 import ZoomedImage from '../components/MainPageComponents/ZoomedImage';
-import ResumeCard from '../components/MainPageComponents/ResumeCard';
+// import ResumeCard from '../components/MainPageComponents/ResumeCard';
 import PersonalInfo from '../components/ProfilePageComponents/PersonalInfo';
 import SkillsEducation from '../components/ProfilePageComponents/SkillsEducation';
 import ExperienceProjects from '../components/ProfilePageComponents/ExperienceProjects';
@@ -86,12 +86,17 @@ function ResumeBuilder() {
                     <div className='templateCards d-flex flex-row justify-center'>
                         {
                             items.map((item, index) => (
-                                <ResumeCard
-                                    imagePath={item}
-                                    pageId={(index + 1).toString()}
-                                    onMouseEnterImage={() => { setImageZoomed({ isZoomed: true, zoomedImgPath: item }) }}
-                                    onMouseLeaveImage={() => { setImageZoomed({ isZoomed: false, zoomedImgPath: item }) }}
-                                />
+                                <Link to={`/Resume/${index + 1}`}>
+                                    <div className='resumeCard'>
+                                        <img width={250} height={350} src={item}></img>
+                                    </div >
+                                </Link>
+                                // <ResumeCard
+                                //     imagePath={item}
+                                //     pageId={(index + 1).toString()}
+                                //     onMouseEnterImage={() => { setImageZoomed({ isZoomed: true, zoomedImgPath: item }) }}
+                                //     onMouseLeaveImage={() => { setImageZoomed({ isZoomed: false, zoomedImgPath: item }) }}
+                                // />
                             ))
 
                         }
