@@ -56,7 +56,7 @@ function ResumeBuilder() {
                 </h3>
             </div>
             <div className='content'>
-                {!isLoggedIn && <div className='formBox'>
+                {!isLoggedIn && <div className='formBox mb-50'>
                     {loading && <Spin size='large' />}
                     <div className='updateProfile'>
                         <h4><b>Обновление профиля</b></h4>
