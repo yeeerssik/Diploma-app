@@ -38,7 +38,7 @@ function HeaderCut() {
                         </div>
                     </Link>
                     <div className='headerBar d-flex flex-wrap'>
-                        <a className='barItem mr-20' href='./Resume/builder'>Создать резюме</a>
+                        <a className='barItem mr-20' href='/Resume/Builder'>Создать резюме</a>
                         { isLoggedIn && <a className='barItem mr-20' href='/Login'>Вход</a>}
 
                     </div>
