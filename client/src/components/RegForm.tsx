@@ -68,40 +68,6 @@ function RegistrationForm() {
                     </Button>
                 </div>
             </Form>
-            {/* <form onSubmit={onSubmit}>
-                <div className='loginForm'>
-                    <div className='formSection'>
-                        <div className='formGroup d-flex flex-column align-center justify-center'>
-                            <div className='formElements d-flex flex-column align-left justify-center'>
-                                <label className='inputLabel mb-5'>Электронный адрес*</label>
-                                <input className='inputElement mb-15' type='text' name='email' />   
-                            </div>
-                            <div className='formElements d-flex flex-column align-left justify-center'>
-                                <label className='inputLabel mb-5'>Пароль*</label>
-                                <input className='inputElement' type={ isVisible ? 'text' : 'password'} name='password' />
-                                <div className='passwordVisibility' onClick={ onClickShow  }>
-                                    <span className='visibilityImg'>
-                                        <img width={25} height={25} src={ isVisible ? './utils/hide.svg' : './utils/show.svg'} />
-                                    </span>
-                                </div>
-                            </div>
-                            <div className='formElements d-flex flex-column align-left justify-center mt-10'>
-                                <label className='inputLabel mb-5'>Подтвердите пароль*</label>
-                                <input className='inputElement' type={ isVisible ? 'text' : 'password'} name='password' />
-                                <div className='passwordVisibility' onClick={ onClickShow  }>
-                                    <span className='visibilityImg'>
-                                        <img width={25} height={25} src={ isVisible ? './utils/hide.svg' : './utils/show.svg'} />
-                                    </span>
-                                </div>
-                            </div>
-                            <Link to='/Login' className='forgotPassword'>Уже есть аккаунт?</Link>
-                        </div>
-                    </div>
-                </div>
-                <div className='loginButton'>
-                    <button className='submitButton p-10' type='submit'>Войти</button>
-                </div>
-            </form> */}
         </div>
     );
 }
