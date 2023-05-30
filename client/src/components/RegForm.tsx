@@ -37,8 +37,20 @@ function RegistrationForm() {
             </div>
             { loading && <Spin size='large' /> }
             <Form className='formBox' layout='vertical' onFinish={onSubmit}>
-                <Form.Item name='username' label='Имя пользователя*'>
-                    <Input placeholder='Имя пользователя' />
+                <Form.Item name='username' label='Логин*'>
+                    <Input placeholder='Логин' />
+                </Form.Item>
+
+                <Form.Item name='firstName' label='Имя*'>
+                    <Input placeholder='Имя' />
+                </Form.Item>
+
+                <Form.Item name='lastName' label='Фамилия*'>
+                    <Input placeholder='Фамилия' />
+                </Form.Item>
+
+                <Form.Item name='email' label='Электронный адрес*'>
+                    <Input placeholder='Электронный адрес' />
                 </Form.Item>
 
                 <Form.Item name='password' label='Пароль*'>

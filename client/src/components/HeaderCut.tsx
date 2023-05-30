@@ -10,6 +10,7 @@ function HeaderCut() {
     const [isLoggedIn, setIsLoggedIn] = useState(user ? false : true);
     
     var username = user ? user.username : "";
+    var userFirstName = user ? user.firstName : "";
     
     const menu = (
         <Menu>
@@ -38,9 +39,8 @@ function HeaderCut() {
                         </div>
                     </Link>
                     <div className='headerBar d-flex flex-wrap'>
-                        <a className='barItem mr-20' href='/Resume/Builder'>Создать резюме</a>
+                        { userFirstName && <a className='barItem mr-20' href='/Resume/Builder'>Создать резюме</a> }
                         { isLoggedIn && <a className='barItem mr-20' href='/Login'>Вход</a>}
-
                     </div>
 
                     <div className="dropDownMenu">
